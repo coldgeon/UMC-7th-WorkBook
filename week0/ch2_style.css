@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  height: 13vh;
+}
+
+.header {
+  width: 30%;
+  background-color: black;
+}
+
+.menu {
+  width: 70%;
+  background-color: red;
+}
+
+.main-sector {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'a a a a'
+    'a a a a'
+    'b b c d'
+    'b b c e';
+}
+
+.hero {
+  grid-area: a;
+  background-color: blue;
+}
+
+.main {
+  grid-area: b;
+  background-color: darkblue;
+}
+
+.image {
+  grid-area: d;
+  background-color: lightblue;
+}
+
+.extra {
+  grid-area: e;
+  background-color: lightseagreen;
+}
+
+footer {
+  width: 100vw;
+  height: 13vh;
+  background-color: yellow;
+}

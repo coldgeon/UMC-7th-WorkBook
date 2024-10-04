@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+nav {
+  border-bottom: solid 1px black;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+div {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-logo {
+  text-decoration: none;
+  color: rgba(0, 0, 0);
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav-items {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-items a:hover {
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  nav {
+    font-size: 15px;
+  }
+  .main-logo {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    font-size: 13px;
+  }
+  .main-logo {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    font-size: 10px;
+  }
+  .main-logo {
+    font-size: 20px;
+  }
+}

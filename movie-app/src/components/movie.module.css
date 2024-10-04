@@ -1,0 +1,7 @@
+.movie {
+  background-color: black;
+}
+
+.movie :hover {
+  opacity: 0.7;
+}
