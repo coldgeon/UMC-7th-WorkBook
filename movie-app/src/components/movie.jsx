@@ -13,10 +13,14 @@ export default function Movie() {
     <>
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(10,1fr)',
-          listStyle: 'none',
+          //   display: 'grid',
+          //   gridTemplateColumns: 'repeat(10,1fr)',
+          //   listStyle: 'none',
+          //   gap: '20px',
+          display: 'flex',
+          justifyContent: 'center',
           gap: '20px',
+          flexWrap: 'wrap',
         }}
       >
         {movies.map((movie) => (

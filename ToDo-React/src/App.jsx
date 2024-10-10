@@ -45,9 +45,12 @@ function App() {
   };
 
   //issue1: 분리 성공 했는데 다른 건 다 되는데, 왜 addToDo 했을 때 input 박스가 안 비워질까요(addToDo 함수에 setText('') 이렇게 주기도 했고, 또 UI 가보면 비워져있는 취급?을 받는 거 같던데)
+  //해결: Input 컴포넌트를 넘겨주는데, Input.jsx에서는 value 값을 args로 안 받음 근데 또 여기서 하나의 이슈, 아래의 Input에서는 defaultvalue로 값을 받음 따라서 {...rest}로 다 넘겨버림..ㄷㄷ
+
   return (
     <>
       <form onSubmit={handleSubmit}>
+        {/* <Input type="text" value={text} onChange={(e) => setText(e.target.value)} /> */}
         <Input type="text" value={text} onChange={(e) => setText(e.target.value)} />
         <Button onClick={addToDo} label={'할일 등록'}></Button>
       </form>
@@ -63,7 +66,7 @@ function App() {
             ) : (
               <div style={{ display: 'flex', gap: '5px' }}>
                 <p>{todo.id}.</p>
-                <input defaultValue={todo.task} onChange={(e) => setModifyText(e.target.value)}></input>
+                <Input defaultValue={todo.task} onChange={(e) => setModifyText(e.target.value)}></Input>
                 <Button onClick={() => modifyToDo(todo.id, modifyText)} label={'수정완료'}></Button>
               </div>
             )}

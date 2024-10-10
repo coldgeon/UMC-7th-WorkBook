@@ -1,4 +1,7 @@
-/* box-sizing 규칙을 명시합니다. */
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+    /* box-sizing 규칙을 명시합니다. */
 *,
 *::before,
 *::after {
@@ -24,6 +27,11 @@ blockquote,
 dl,
 dd {
   margin-block-end: 0;
+  margin: 0;
+  
+}
+a {
+    text-decoration: none
 }
 
 /* list를 role값으로 갖는 ul, ol 요소의 기본 목록 스타일을 제거합니다. */
@@ -87,3 +95,6 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+`;
+
+export default GlobalStyle;
