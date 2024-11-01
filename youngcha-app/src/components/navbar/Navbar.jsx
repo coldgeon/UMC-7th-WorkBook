@@ -35,7 +35,9 @@ const NavButtons = styled.div`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <Logo>YONGCHA</Logo>
+      <Link to={'/'}>
+        <Logo>YONGCHA</Logo>
+      </Link>
       <NavButtons>
         <Link to={'/login'}>
           <button>로그인</button>

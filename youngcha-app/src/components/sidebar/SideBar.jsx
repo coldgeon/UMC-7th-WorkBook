@@ -38,6 +38,21 @@ const Sidebar = () => {
           <FaFilm className="icon" /> 영화
         </Link>
       </SidebarItem>
+      {/*<SidebarItem>
+        <Link to={'/movies/nowplaying'}>
+          <FaFilm className="icon" /> 상영중인 영화
+        </Link>
+      </SidebarItem>
+      <SidebarItem>
+        <Link to={'/movies/toprated'}>
+          <FaFilm className="icon" /> TOP 영화
+        </Link>
+      </SidebarItem>
+      <SidebarItem>
+        <Link to={'/movies/upcoming'}>
+          <FaFilm className="icon" /> 개봉예정 영화
+        </Link>
+      </SidebarItem> */}
     </SidebarContainer>
   );
 };

@@ -1,9 +1,5 @@
-import Movie from '../movie/movie';
+const Home = () => {
+  return <h1>Home!</h1>;
+};
 
-export default function Home() {
-  return (
-    <>
-      <Movie></Movie>
-    </>
-  );
-}
+export default Home;

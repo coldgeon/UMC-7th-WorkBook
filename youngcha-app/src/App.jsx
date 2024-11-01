@@ -6,13 +6,13 @@ import Router from './router';
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 120vh;
+  height: 150vh;
 `;
 
 const MainContent = styled.div`
   display: flex;
   flex: 1;
-  height: 100%;
+  /* height: 120%; */
 `;
 
 const PageContent = styled.div`
@@ -20,7 +20,7 @@ const PageContent = styled.div`
   flex: 1;
   color: white;
   padding: 10px;
-  font-size: 24px;
+  /* font-size: 24px; */
 `;
 
 const App = () => {
